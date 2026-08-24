@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gain-fitnessleads.com/sitemap.xml
