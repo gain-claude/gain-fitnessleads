@@ -1,4 +1,7 @@
 User-agent: *
-Allow: /
+Disallow: /
 
-Sitemap: https://gain-fitnessleads.com/sitemap.xml
+# Prototyp-Phase: Indexierung vorerst deaktiviert.
+# Vor dem oeffentlichen Start auf "Allow: /" umstellen und die
+# Sitemap-Zeile wieder aktivieren.
+# Sitemap: https://gain-fitnessleads.com/sitemap.xml
