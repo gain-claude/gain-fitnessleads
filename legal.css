@@ -13,10 +13,18 @@ a{color:inherit}
 
 .lg-nav{border-bottom:1px solid var(--line-soft);background:#fff;position:sticky;top:0;z-index:10}
 .lg-nav .lg-wrap{display:flex;align-items:center;height:70px;max-width:1180px}
+
+/* Wortmarke: der Textschriftzug im Markup wird ausgeblendet und durch
+   die SVG-Datei ersetzt. Ueber mask + currentColor bleibt sie faerbbar,
+   ohne dass eine zweite Bilddatei noetig ist. */
 .lg-logo{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:27px;
-  display:flex;align-items:center;line-height:1;text-decoration:none}
-.lg-logo b{color:var(--txt)}
-.lg-logo i{color:var(--mint);font-style:normal}
+  display:flex;align-items:center;line-height:1;text-decoration:none;color:var(--txt)}
+.lg-logo b,.lg-logo i{display:none}
+.lg-logo::before{
+  content:"";display:block;width:52px;height:25px;background:currentColor;
+  -webkit-mask:url("/gain-logo.svg") no-repeat center/contain;
+          mask:url("/gain-logo.svg") no-repeat center/contain;
+}
 .lg-logo span{font-size:13.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--txt-3);
   margin-left:10px;padding-left:10px;border-left:1px solid var(--line);font-weight:600}
 .lg-back{margin-left:auto;font-size:14.5px;color:var(--txt-2);text-decoration:none;
@@ -48,6 +56,7 @@ th{background:var(--bg-2);font-size:11px;letter-spacing:.11em;text-transform:upp
 .lg-foot a{color:#B8C7C2;text-decoration:none}
 .lg-foot a:hover{color:var(--mint-fill)}
 .lg-foot span{margin-left:auto;color:#7A8B86}
+.lg-foot .lg-logo{color:#fff}
 
 @media(max-width:640px){
   .lg-main{padding:38px 24px 60px}
