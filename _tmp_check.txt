@@ -1,0 +1,8 @@
+  <h2>4. Guthaben, Preise und Freischaltung</h2>
+  <p>
+    Anfragen werden gegen Guthaben freigeschaltet. Guthaben wird in Euro gefuehrt;
+    eine Zwischenwaehrung wie Punkte oder Credits gibt es nicht. Der Preis einer
+    Anfrage wird vor der Freischaltung in Euro angezeigt und richtet sich nach
+    Kategorie, angegebenem Budget, Region und Verifizierungsgrad. Er liegt derzeit
+    zwischen 15 und 115 Euro netto.
+  </p>
